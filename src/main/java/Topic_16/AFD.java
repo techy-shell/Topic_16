@@ -1,8 +1,6 @@
 package Topic_16;
 
-public class AFD extends Cattery{
-    // code that is dispenses food to the cats list
-
+public class AFD extends Cattery {
     public static void meal1(){
         System.out.println("All cats fed breakfast at 7am");
 

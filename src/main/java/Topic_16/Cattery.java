@@ -1,14 +1,16 @@
 package Topic_16;
 
-import java.util.ArrayList;
-
 public class Cattery {
-    public static void main(String[] args) {
-        Cats.catsList();
-        System.out.println(" ");
-        AFD.meal1();
-        AFD.meal2();
-        AFD.meal3();
+    private static Cattery single_instance = null;
+    public String s;
+    Cattery(){
+        s = "Activity 4 - refactoring my Cattery class to make it singleton";
+    }
+    public static Cattery getInstance(){
+        if (single_instance == null){
+            single_instance = new Cattery();
+        }
+        return single_instance;
     }
 }
 

@@ -50,6 +50,7 @@ public class Cats extends Cattery{
     }
 
     public Cats(String name, String breed, int age, boolean isOverweight, String food) {
+        super();
         this.name = name;
         this.breed = breed;
         this.age = age;
