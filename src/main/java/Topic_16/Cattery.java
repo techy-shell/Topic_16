@@ -1,16 +1,16 @@
 package Topic_16;
 
 public class Cattery {
-    private static Cattery single_instance = null;
+    private static Cattery cattery = null;
     public String s;
     Cattery(){
         s = "Activity 4 - refactoring my Cattery class to make it singleton";
     }
     public static Cattery getInstance(){
-        if (single_instance == null){
-            single_instance = new Cattery();
+        if (cattery == null){
+            cattery = new Cattery();
         }
-        return single_instance;
+        return cattery;
     }
 }
 
